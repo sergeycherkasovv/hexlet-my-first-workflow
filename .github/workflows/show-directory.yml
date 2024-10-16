@@ -12,6 +12,8 @@ jobs:
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v4
+      - name: Check out repository code
+        uses: actions/checkout@v4
       # run – произвольная bash-команда
       # ls -la выведет содержимое текущего репозитория
       - run: make say-hello
